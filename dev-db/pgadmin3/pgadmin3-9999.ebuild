@@ -10,7 +10,7 @@ HOMEPAGE="http://www.pgadmin.org/"
 SRC_URI=""
 
 #EGIT_REPO_URI="git://git.postgresql.org/git/pgadmin3.git"
-EGIT_REPO_URI="https://github.com/dimv36/pgadmin3.git"
+EGIT_REPO_URI="https://github.com/vladimir-kokovic/pgadmin3.git"
 
 LICENSE="POSTGRESQL"
 KEYWORDS="~amd64 ~ppc ~x86 ~x86-fbsd"
