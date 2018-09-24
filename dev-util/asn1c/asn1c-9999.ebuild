@@ -24,15 +24,7 @@ src_configure() {
 	econf $(use_enable sanitize test-asan) $(use_enable sanitize test-ubsan)
 }
 
-src_compile() {
-	default_src_compile
-
-	emake -C skeletons libasn1cskeletons.la
-}
-
 src_install(){
 	emake DESTDIR="${D}" install || die "make install failed"
 	dodoc BUGS FAQ || die "dodoc failed"
-
-	dolib.a skeletons/.libs/libasn1cskeletons.a
 }
